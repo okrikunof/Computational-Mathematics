@@ -38,10 +38,10 @@ int main() {
                 result = Interpolate(x_axis, y_axis, x, LagrangeInterpolation);
                 break;
             case 2:
-                result = Interpolate(x_axis, y_axis, x, NewtonDDInterpolation);
+                result = Interpolate(x_axis, y_axis, x, NewtonInterpolation);
                 break;
             case 3:
-                result = Interpolate(x_axis, y_axis, x, NewtonFDInterpolation);
+                result = Interpolate(x_axis, y_axis, x, interpolate);
                 break;
             default:
                 std::cerr << "Неверный выбор" << std::endl;
