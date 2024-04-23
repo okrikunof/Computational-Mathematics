@@ -2,7 +2,6 @@
 #define COMPUTATIONAL_MATHEMATICS_LAGRANGEPOLYNOMIAL_H
 
 #include <vector>
-#include <iostream>
 
 double LagrangeInterpolation(std::vector<double> &x_axis, std::vector<double> &y_axis, double x) {
     if (x_axis.size() != y_axis.size() || x_axis.empty() || y_axis.empty()) {

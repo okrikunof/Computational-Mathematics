@@ -1,11 +1,12 @@
-#ifndef COMPUTATIONAL_MATHEMATICS_NEWTONPOLYNOMIALDD_H
-#define COMPUTATIONAL_MATHEMATICS_NEWTONPOLYNOMIALDD_H
+#ifndef COMPUTATIONAL_MATHEMATICS_NEWTONPOLYNOMIALDIVIDEDDIFFERENCE_H
+#define COMPUTATIONAL_MATHEMATICS_NEWTONPOLYNOMIALDIVIDEDDIFFERENCE_H
 
 double DividedDifference(double x0, double x1, double y0, double y1) {
     return (y1 - y0) / (x1 - x0);
 }
 
-double NewtonInterpolation(const std::vector<double>& x_axis, const std::vector<double>& y_axis, double x) {
+double
+NewtonInterpolationDD(const std::vector<double> &x_axis, const std::vector<double> &y_axis, double x) {
 
     if (x_axis.size() != y_axis.size() || x_axis.empty() || y_axis.empty()) {
         throw std::invalid_argument("Неверный ввод: размеры массивов не равны или один из массивов равен нулю");
@@ -14,9 +15,9 @@ double NewtonInterpolation(const std::vector<double>& x_axis, const std::vector<
     if (x < x_axis[0] || x > x_axis[x_axis.size() - 1]) {
         throw std::invalid_argument("Точка x выходит за пределы интервала x_axis");
     }
-    
+
     std::vector<std::vector<double>> F(x_axis.size(), std::vector<double>(x_axis.size()));
-    
+
     for (int i = 0; i < x_axis.size(); i++) {
         F[i][0] = y_axis[i];
     }
