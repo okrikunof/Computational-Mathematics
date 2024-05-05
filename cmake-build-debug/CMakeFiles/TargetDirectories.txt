@@ -1,9 +1,0 @@
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/matplotlib_cpp.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/Computational_Mathematics.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/Computational_Mathematic.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/list_install_components.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/install.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/install/local.dir
-/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug/CMakeFiles/install/strip.dir

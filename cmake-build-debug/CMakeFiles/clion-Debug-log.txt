@@ -1,6 +1,0 @@
-/Users/krknv/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/krknv/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/krknv/Documents/Computational-Mathematics -B /Users/krknv/Documents/Computational-Mathematics/cmake-build-debug
--- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found version "3.12.3") found components: Interpreter Development Development.Module Development.Embed 
--- Found Python3: /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12 (found version "3.12.3") found components: NumPy Interpreter Development.Module 
--- Configuring done (0.4s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/krknv/Documents/Computational-Mathematics/cmake-build-debug
