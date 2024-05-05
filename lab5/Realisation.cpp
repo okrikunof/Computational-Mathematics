@@ -1,9 +1,14 @@
 #include <iostream>
 #include "SolvingMethods.h"
+#include "matplotlibcpp.h"
+#include "StirlingPolynomial.h"
+
+namespace plt = matplotlibcpp;
 
 int main() {
     std::cout << "Какой полином вы хотите использовать?\n1)Полином Лагранжа\n"
-                 "2)Полином Ньютона с разделенными разностями\n3)Полином Ньютона с конечными разностями\n";
+                 "2)Полином Ньютона с разделенными разностями\n3)Полином Ньютона с конечными разностями\n"
+                 "4) Полином Стирлинга\n5) Полином Бесселяn\n";
 
     size_t methodChoice;
     std::cin >> methodChoice;
@@ -44,6 +49,11 @@ int main() {
             case 3:
                 result = NewtonInterpolationFD(x_axis, y_axis, x);
                 break;
+            case 4:
+                result = StirlingInterpolation(x_axis, y_axis, x);
+                plt::plot(x_axis, y_axis, "-o");
+                plt::show();
+                break;
             default:
                 std::cerr << "Неверный выбор" << std::endl;
                 return 1;
@@ -52,9 +62,7 @@ int main() {
         Difference(y_axis);
         std::cout << "y(x) = " << result;
     } else if (inputChoice == 2) {
-        std::string filename;
-        std::cout << "Введите имя файла: ";
-        std::cin >> filename;
+        std::string filename = "t2.txt";
 
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -86,6 +94,9 @@ int main() {
                 break;
             case 3:
                 result = NewtonInterpolationFD(x_axis, y_axis, x);
+                break;
+            case 4 :
+                result = StirlingInterpolation(x_axis, y_axis, x);
                 break;
             default:
                 std::cerr << "Неверный выбор" << std::endl;
@@ -132,6 +143,9 @@ int main() {
                 break;
             case 3:
                 result = NewtonInterpolationFD(x_axis, y_axis, x);
+                break;
+            case 4:
+                result = StirlingInterpolation(x_axis, y_axis, x);
                 break;
             default:
                 std::cerr << "Неверный выбор" << std::endl;

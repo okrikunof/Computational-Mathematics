@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7ee97b187e002d1ed2b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Computational_Mathematics",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Computational_Mathematic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Computational_Mathematic-Debug-479174aec980e9452bb3.json",
+					"name" : "Computational_Mathematic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Computational_Mathematics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Computational_Mathematics-Debug-b1cfdb93c1c1fc2c0ed8.json",
+					"name" : "Computational_Mathematics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matplotlib_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matplotlib_cpp-Debug-8e205dec7c2c8231e97d.json",
+					"name" : "matplotlib_cpp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/krknv/Documents/Computational-Mathematics/cmake-build-debug",
+		"source" : "/Users/krknv/Documents/Computational-Mathematics"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
