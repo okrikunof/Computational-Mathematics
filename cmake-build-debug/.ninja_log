@@ -1,4 +1,11 @@
 # ninja log v5
 4	574	1714925248437237065	CMakeFiles/Computational_Mathematics.dir/lab5/Realisation.cpp.o	85832df2374f89f4
+4	530	1714943941489723829	CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o	741fa067e7606c01
 758	870	1713888573095938845	Computational_Mathematics	4852245171cbe0fa
-575	610	1714925248474738899	bin/Computational_Mathematics	fa50c96b05e9cb9f
+534	634	1714943941595483512	bin/Computational_Mathematics	dfdd8aaa7d66add2
+4	558	1714947248647804333	CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o	741fa067e7606c01
+559	652	1714947248742430845	bin/Computational_Mathematics	dfdd8aaa7d66add2
+4	398	1714947344066840921	CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o	741fa067e7606c01
+399	433	1714947344102278874	bin/Computational_Mathematics	dfdd8aaa7d66add2
+5	410	1714947511285093118	CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o	741fa067e7606c01
+410	451	1714947511327537945	bin/Computational_Mathematics	dfdd8aaa7d66add2

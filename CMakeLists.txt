@@ -8,7 +8,11 @@ set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/${PACKAGE_NAME}/cmake)
 
 # Library target
 add_library(matplotlib_cpp INTERFACE
-        lab4/Realisation.cpp)
+        lab4/Realisation.cpp
+        lab4/LinearApproximation.h
+        lab4/ChooseApproximationFunction.h
+        lab4/QuadraticApproximation.h
+)
 target_include_directories(matplotlib_cpp
         INTERFACE
         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/examples>
@@ -39,14 +43,22 @@ install(
 
 # Examples
 add_executable(Computational_Mathematics
-        lab4/Realisation.cpp)
+        lab4/Realisation.cpp
+        lab4/LinearApproximation.h
+        lab4/ChooseApproximationFunction.h
+        lab4/QuadraticApproximation.h
+)
 target_link_libraries(Computational_Mathematics PRIVATE matplotlib_cpp)
 set_target_properties(Computational_Mathematics PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 
 if (Python3_NumPy_FOUND)
     add_executable(Computational_Mathematic
-            lab4/Realisation.cpp)
+            lab4/Realisation.cpp
+            lab4/LinearApproximation.h
+            lab4/ChooseApproximationFunction.h
+            lab4/QuadraticApproximation.h
+    )
     target_link_libraries(Computational_Mathematic PRIVATE matplotlib_cpp)
     set_target_properties(Computational_Mathematic PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 endif ()

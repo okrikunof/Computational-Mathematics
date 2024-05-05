@@ -38,6 +38,15 @@
 			[
 				0
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3
+			]
 		}
 	],
 	"sources" : 
@@ -46,6 +55,21 @@
 			"backtrace" : 1,
 			"path" : "lab4/Realisation.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lab4/LinearApproximation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lab4/ChooseApproximationFunction.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lab4/QuadraticApproximation.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "INTERFACE_LIBRARY"

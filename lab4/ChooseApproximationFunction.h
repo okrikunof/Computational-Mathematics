@@ -1,0 +1,8 @@
+#ifndef COMPUTATIONAL_MATHEMATICS_CHOOSEAPPROXIMATIONFUNCTION_H
+#define COMPUTATIONAL_MATHEMATICS_CHOOSEAPPROXIMATIONFUNCTION_H
+
+double CoefficientOfDetermination(const std::vector<double> &variances) {
+
+}
+
+#endif
