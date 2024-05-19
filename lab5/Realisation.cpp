@@ -6,8 +6,8 @@
 namespace plt = matplotlibcpp;
 
 int main() {
-    std::cout << "Какой полином вы хотите использовать?\n1)Полином Лагранжа\n"
-                 "2)Полином Ньютона с разделенными разностями\n3)Полином Ньютона с конечными разностями\n"
+    std::cout << "Какой полином вы хотите использовать?\n1) Полином Лагранжа\n"
+                 "2) Полином Ньютона с разделенными разностями\n3) Полином Ньютона с конечными разностями\n"
                  "4) Полином Стирлинга\n5) Полином Бесселяn\n";
 
     size_t methodChoice;
@@ -62,7 +62,7 @@ int main() {
         Difference(y_axis);
         std::cout << "y(x) = " << result;
     } else if (inputChoice == 2) {
-        std::string filename = "t2.txt";
+        std::string filename = "t1.txt";
 
         std::ifstream file(filename);
         if (!file.is_open()) {

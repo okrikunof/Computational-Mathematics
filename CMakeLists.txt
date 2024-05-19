@@ -8,10 +8,15 @@ set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/${PACKAGE_NAME}/cmake)
 
 # Library target
 add_library(matplotlib_cpp INTERFACE
-        lab4/Realisation.cpp
-        lab4/LinearApproximation.h
-        lab4/ChooseApproximationFunction.h
-        lab4/QuadraticApproximation.h
+        lab6/Realisation.cpp
+        lab6/matplotlibcpp.h
+        lab6/Functions.h
+        lab6/EulerMethod.h
+        lab6/PrintResults.h
+        lab6/RungeKuttaMethod.h
+        lab6/RungeRule.h
+        lab6/ErrorCalculation.h
+
 )
 target_include_directories(matplotlib_cpp
         INTERFACE
@@ -43,10 +48,16 @@ install(
 
 # Examples
 add_executable(Computational_Mathematics
-        lab4/Realisation.cpp
-        lab4/LinearApproximation.h
-        lab4/ChooseApproximationFunction.h
-        lab4/QuadraticApproximation.h
+        lab6/Realisation.cpp
+        lab6/matplotlibcpp.h
+        lab6/Functions.h
+        lab6/EulerMethod.h
+        lab6/PrintResults.h
+        lab6/RungeKuttaMethod.h
+        lab6/RungeRule.h
+        lab6/ErrorCalculation.h
+
+
 )
 target_link_libraries(Computational_Mathematics PRIVATE matplotlib_cpp)
 set_target_properties(Computational_Mathematics PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
@@ -54,10 +65,17 @@ set_target_properties(Computational_Mathematics PROPERTIES RUNTIME_OUTPUT_DIRECT
 
 if (Python3_NumPy_FOUND)
     add_executable(Computational_Mathematic
-            lab4/Realisation.cpp
-            lab4/LinearApproximation.h
-            lab4/ChooseApproximationFunction.h
-            lab4/QuadraticApproximation.h
+            lab6/Realisation.cpp
+            lab6/matplotlibcpp.h
+            lab6/Functions.h
+            lab6/EulerMethod.h
+            lab6/PrintResults.h
+            lab6/RungeKuttaMethod.h
+            lab6/MilneMethod.h
+            lab6/RungeRule.h
+            lab6/ErrorCalculation.h
+
+
     )
     target_link_libraries(Computational_Mathematic PRIVATE matplotlib_cpp)
     set_target_properties(Computational_Mathematic PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")

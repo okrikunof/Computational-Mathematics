@@ -55,12 +55,12 @@ build matplotlib_cpp: phony
 
 build cmake_object_order_depends_target_Computational_Mathematics: phony || matplotlib_cpp
 
-build CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o: CXX_COMPILER__Computational_Mathematics_unscanned_Debug /Users/krknv/Documents/Computational-Mathematics/lab4/Realisation.cpp || cmake_object_order_depends_target_Computational_Mathematics
-  DEP_FILE = CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o.d
+build CMakeFiles/Computational_Mathematics.dir/lab6/Realisation.cpp.o: CXX_COMPILER__Computational_Mathematics_unscanned_Debug /Users/krknv/Documents/Computational-Mathematics/lab6/Realisation.cpp || cmake_object_order_depends_target_Computational_Mathematics
+  DEP_FILE = CMakeFiles/Computational_Mathematics.dir/lab6/Realisation.cpp.o.d
   FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/krknv/Documents/Computational-Mathematics/examples -isystem /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12 -isystem /opt/homebrew/lib/python3.12/site-packages/numpy/core/include
   OBJECT_DIR = CMakeFiles/Computational_Mathematics.dir
-  OBJECT_FILE_DIR = CMakeFiles/Computational_Mathematics.dir/lab4
+  OBJECT_FILE_DIR = CMakeFiles/Computational_Mathematics.dir/lab6
 
 
 # =============================================================================
@@ -70,7 +70,7 @@ build CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o: CXX_COMPI
 #############################################
 # Link the executable bin/Computational_Mathematics
 
-build bin/Computational_Mathematics: CXX_EXECUTABLE_LINKER__Computational_Mathematics_Debug CMakeFiles/Computational_Mathematics.dir/lab4/Realisation.cpp.o | /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib || matplotlib_cpp
+build bin/Computational_Mathematics: CXX_EXECUTABLE_LINKER__Computational_Mathematics_Debug CMakeFiles/Computational_Mathematics.dir/lab6/Realisation.cpp.o | /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib || matplotlib_cpp
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_FLAGS = -Xlinker -undefined -Xlinker dynamic_lookup
   LINK_LIBRARIES = /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
@@ -89,12 +89,12 @@ build bin/Computational_Mathematics: CXX_EXECUTABLE_LINKER__Computational_Mathem
 
 build cmake_object_order_depends_target_Computational_Mathematic: phony || matplotlib_cpp
 
-build CMakeFiles/Computational_Mathematic.dir/lab4/Realisation.cpp.o: CXX_COMPILER__Computational_Mathematic_unscanned_Debug /Users/krknv/Documents/Computational-Mathematics/lab4/Realisation.cpp || cmake_object_order_depends_target_Computational_Mathematic
-  DEP_FILE = CMakeFiles/Computational_Mathematic.dir/lab4/Realisation.cpp.o.d
+build CMakeFiles/Computational_Mathematic.dir/lab6/Realisation.cpp.o: CXX_COMPILER__Computational_Mathematic_unscanned_Debug /Users/krknv/Documents/Computational-Mathematics/lab6/Realisation.cpp || cmake_object_order_depends_target_Computational_Mathematic
+  DEP_FILE = CMakeFiles/Computational_Mathematic.dir/lab6/Realisation.cpp.o.d
   FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/krknv/Documents/Computational-Mathematics/examples -isystem /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12 -isystem /opt/homebrew/lib/python3.12/site-packages/numpy/core/include
   OBJECT_DIR = CMakeFiles/Computational_Mathematic.dir
-  OBJECT_FILE_DIR = CMakeFiles/Computational_Mathematic.dir/lab4
+  OBJECT_FILE_DIR = CMakeFiles/Computational_Mathematic.dir/lab6
 
 
 # =============================================================================
@@ -104,7 +104,7 @@ build CMakeFiles/Computational_Mathematic.dir/lab4/Realisation.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable bin/Computational_Mathematic
 
-build bin/Computational_Mathematic: CXX_EXECUTABLE_LINKER__Computational_Mathematic_Debug CMakeFiles/Computational_Mathematic.dir/lab4/Realisation.cpp.o | /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib || matplotlib_cpp
+build bin/Computational_Mathematic: CXX_EXECUTABLE_LINKER__Computational_Mathematic_Debug CMakeFiles/Computational_Mathematic.dir/lab6/Realisation.cpp.o | /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib || matplotlib_cpp
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_FLAGS = -Xlinker -undefined -Xlinker dynamic_lookup
   LINK_LIBRARIES = /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib

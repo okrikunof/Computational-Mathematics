@@ -1,7 +1,7 @@
-#ifndef COMPUTATIONAL_MATHEMATICS_LINEARAPPROXIMATION_H
-#define COMPUTATIONAL_MATHEMATICS_LINEARAPPROXIMATION_H
+#ifndef COMPUTATIONAL_MATHEMATICS_LOGARITHMAPPROXIMATION_H
+#define COMPUTATIONAL_MATHEMATICS_LOGARITHMAPPROXIMATION_H
 
-class LinearApproximation {
+class LogarithmApproximation {
 private:
     size_t n = 0;
     double S = 0, SX = 0, SXX = 0, SY = 0, SXY = 0;
@@ -12,48 +12,6 @@ private:
     std::vector<double> result;
     std::vector<double> x;
     std::vector<double> y;
-
-    void PearsonCorrelation() {
-        double r;
-        double x_mean = 0;
-        double y_mean = 0;
-        for (double xi: x) {
-            x_mean += xi;
-        }
-        for (double yi: y) {
-            y_mean += yi;
-        }
-        x_mean /= x.size();
-        y_mean /= y.size();
-
-        double covariance = 0;
-        for (int i = 0; i < x.size(); ++i) {
-            covariance += (x[i] - x_mean) * (y[i] - y_mean);
-        }
-
-        double x_variance = 0.0;
-        double y_variance = 0.0;
-        for (double xi: x) {
-            x_variance += (xi - x_mean) * (xi - x_mean);
-        }
-        for (double yi: y) {
-            y_variance += (yi - y_mean) * (yi - y_mean);
-        }
-
-        r = covariance / sqrt(x_variance * y_variance);
-
-        if (r < 0.3) {
-            std::cout << "➤ r = " << r << " - связь слабая" << std::endl;
-        } else if (r >= 0.3 || r < 0.5) {
-            std::cout << "➤ r = " << r << " - связь умеренная" << std::endl;
-        } else if (r >= 0.5 || r < 0.7) {
-            std::cout << "➤ r = " << r << " - связь заметная" << std::endl;
-        } else if (r >= 0.7 || r < 0.9) {
-            std::cout << "➤ r = " << r << " - связь высокая" << std::endl;
-        } else if (r >= 0.9 || r <= 0.99) {
-            std::cout << "➤ r = " << r << " - связь весьма высокая" << std::endl;
-        }
-    }
 
     void CalculateR2(const std::vector<double> &y_true, const std::vector<double> &y_pred) {
         if (y_true.size() != y_pred.size()) {
@@ -99,13 +57,17 @@ private:
     }
 
 public:
-    LinearApproximation(const std::vector<double> &x_arguments, const std::vector<double> &y_arguments) {
-        if (x_arguments.size() != y_arguments.size()) {
+    LogarithmApproximation(const std::vector<double> &x_arguments, const std::vector<double> &y_arguments) {
+        if (x.size() != y.size()) {
             std::cerr << "Векторы должны иметь одинаковую длину";
         }
 
-        x = x_arguments;
+        x.resize(x_arguments.size());
         y = y_arguments;
+
+        for (int i = 0; i < x_arguments.size(); i++) {
+            x[i] = log(x_arguments[i]);
+        }
 
         n = x.size();
         result.resize(n);
@@ -131,16 +93,15 @@ public:
         a = delta1 / delta;
         b = delta2 / delta;
 
-        std::cout << "||Результат линейной аппрокисимации:||" << std::endl;
+        std::cout << "||Результат логарифмической аппрокисимации:||" << std::endl;
         for (int i = 0; i < n; i++) {
             result[i] = a * x[i] + b;
-            std::cout << "𝑷" << i + 1 << "(𝒙) = ах + a1 -> " << result[i] << std::endl;
+            std::cout << "𝑷" << i + 1 << "(𝒙) = a * ln(x) + b -> " << result[i] << std::endl;
             epsilon = (a * x[i] + b) - y[i];
             std::cout << "ε" << i + 1 << " = " << epsilon << std::endl;
             S += epsilon * epsilon;
         }
 
-        PearsonCorrelation();
         std::cout << "➤ S = " << S << std::endl;
         CalculateR2(y, result);
         variance = sqrt(S / n);
